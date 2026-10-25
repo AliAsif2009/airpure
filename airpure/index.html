@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AirPure HVAC — Professional Duct &amp; HVAC Cleaning</title>
+<meta name="description" content="Air duct, furnace, AC coil and dryer vent cleaning. Book a certified HVAC cleaning today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+<div class="loader" id="loader"><span id="pct">0%</span></div>
+
+<header class="nav glass">
+  <a href="#top" class="brand"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/></svg>airpure</a>
+  <nav><a href="#process">Process</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a></nav>
+  <a href="#book" class="btn small">Book a clean</a>
+</header>
+
+<main id="top">
+  <section class="chapter hero">
+    <div class="panel">
+      <p class="eyebrow">Certified HVAC cleaning</p>
+      <h1>Breathe clean.<br>Live better.</h1>
+      <p class="lead">We clean the ducts, coils and vents behind your walls, so the air in your home or workplace is as fresh as it feels.</p>
+      <div class="actions"><a href="#book" class="btn">Book a cleaning</a><a href="#process" class="btn ghost">See how it works</a></div>
+    </div>
+    <p class="scrollhint">Scroll to enter the duct</p>
+  </section>
+
+  <section class="chapter">
+    <div class="panel">
+      <p class="eyebrow">What’s in your ducts</p>
+      <h2>The anatomy<br>of your air</h2>
+      <p class="lead">Every time your system runs, it moves air through metal passages you never see. Dust, pet hair, pollen and mold spores settle there for years, then travel straight into your rooms.</p>
+      <ul class="chips"><li class="glass">Dust &amp; debris</li><li class="glass">Pet dander</li><li class="glass">Mold spores</li></ul>
+    </div>
+  </section>
+
+  <section class="chapter right" id="process">
+    <div class="panel glass card">
+      <p class="eyebrow">How we clean</p>
+      <h2>Built on a<br>deep clean</h2>
+      <ol class="steps">
+        <li><b>Inspect</b><span>A camera check of ducts, vents and the blower tells us what needs work.</span></li>
+        <li><b>Agitate</b><span>Rotary brushes and air whips loosen debris from every duct wall.</span></li>
+        <li><b>Extract</b><span>A truck-mounted vacuum pulls the loosened dirt out of the system.</span></li>
+        <li><b>Sanitize</b><span>A safe, EPA-registered treatment is applied where it is needed.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="chapter col" id="services">
+    <div class="head"><p class="eyebrow">What we clean</p><h2>A language of<br>fresh air</h2></div>
+    <div class="grid">
+      <article class="glass card"><h3>Air duct cleaning</h3><p>Supply and return lines cleaned end to end.</p></article>
+      <article class="glass card"><h3>Furnace &amp; heat pump</h3><p>Blower, housing and heat exchanger cleaned and checked.</p></article>
+      <article class="glass card"><h3>AC coil cleaning</h3><p>Cleaner coils cool better and use less energy.</p></article>
+      <article class="glass card"><h3>Dryer vent cleaning</h3><p>Removes lint buildup that causes slow drying and fires.</p></article>
+      <article class="glass card"><h3>Mold &amp; sanitizing</h3><p>Targeted treatment for odors and microbial growth.</p></article>
+      <article class="glass card"><h3>Commercial HVAC</h3><p>Scheduled maintenance for offices, shops and clinics.</p></article>
+    </div>
+  </section>
+
+  <section class="chapter col" id="pricing">
+    <div class="head"><p class="eyebrow">Pricing</p><h2>Clear prices,<br>no surprises</h2></div>
+    <div class="grid three">
+      <article class="glass card"><h3>Essential</h3><p class="price">From $149</p><ul><li>Up to 6 vents</li><li>Supply line cleaning</li><li>Filter check</li></ul><a href="#book" class="btn ghost">Choose Essential</a></article>
+      <article class="glass card feat"><h3>Complete</h3><p class="price">From $299</p><ul><li>Whole-home ducts</li><li>Furnace &amp; coil cleaning</li><li>Sanitizing treatment</li></ul><a href="#book" class="btn">Choose Complete</a></article>
+      <article class="glass card"><h3>Commercial</h3><p class="price">Custom quote</p><ul><li>On-site assessment</li><li>Scheduled service plans</li><li>Written report</li></ul><a href="#book" class="btn ghost">Request a quote</a></article>
+    </div>
+    <p class="fine">Sample prices. Replace with your own rates.</p>
+  </section>
+
+  <section class="chapter col" id="reviews">
+    <div class="head"><p class="eyebrow">Customer reviews</p><h2>Air you can<br>feel the difference in</h2></div>
+    <div class="grid three">
+      <blockquote class="glass card">“My allergies eased within a week. The crew showed us the before and after photos.”<cite>Sample customer, homeowner</cite></blockquote>
+      <blockquote class="glass card">“On time, tidy, and honest about what we actually needed.”<cite>Sample customer, landlord</cite></blockquote>
+      <blockquote class="glass card">“They cleaned our office system over a weekend. No disruption at all.”<cite>Sample customer, office manager</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="chapter right" id="book">
+    <form class="panel glass card" id="form" novalidate>
+      <p class="eyebrow">Book a cleaning</p>
+      <h2>Fresh air by<br>this weekend</h2>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+      <label>Service<select name="service"><option>Air duct cleaning</option><option>Furnace &amp; heat pump</option><option>AC coil cleaning</option><option>Dryer vent cleaning</option><option>Commercial HVAC</option></select></label>
+      <label>Notes<textarea name="notes" rows="3"></textarea></label>
+      <button class="btn" type="submit">Request my booking</button>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="foot glass"><span>© <span id="yr"></span> AirPure HVAC. Licensed &amp; insured.</span><span>Call (555) 010-2030 · hello@airpure.example</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
