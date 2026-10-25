@@ -11,13 +11,31 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2M9.6 4.6A2 2 0 1 1 11 8H2M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-1.8.8-3 1.8-4 .2 1.3 1 2 2 2.2C10.5 8 11 5 12 2z"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M2 12h20M12 2v20M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-dryer" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M7 7h.01M10 7h.01"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  </defs>
+</svg>
+
 <canvas id="stage" aria-hidden="true"></canvas>
 <div class="vignette"></div>
 <div class="loader" id="loader"><span id="pct">0%</span></div>
 
 <header class="nav glass">
   <a href="#top" class="brand"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z"/></svg>airpure</a>
-  <nav><a href="#process">Process</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a></nav>
+  <nav><a href="#process">Process</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></nav>
   <a href="#book" class="btn small">Book a clean</a>
 </header>
 
@@ -28,8 +46,13 @@
       <h1>Breathe clean.<br>Live better.</h1>
       <p class="lead">We clean the ducts, coils and vents behind your walls, so the air in your home or workplace is as fresh as it feels.</p>
       <div class="actions"><a href="#book" class="btn">Book a cleaning</a><a href="#process" class="btn ghost">See how it works</a></div>
+      <ul class="trust">
+        <li class="glass"><svg class="ic"><use href="#i-shield"/></svg>Licensed &amp; insured</li>
+        <li class="glass"><svg class="ic"><use href="#i-clock"/></svg>Same-day slots</li>
+        <li class="glass"><svg class="ic"><use href="#i-check"/></svg>Satisfaction guarantee</li>
+      </ul>
     </div>
-    <p class="scrollhint">Scroll to enter the duct</p>
+    <p class="scrollhint">Scroll to play the video</p>
   </section>
 
   <section class="chapter">
@@ -37,7 +60,7 @@
       <p class="eyebrow">What’s in your ducts</p>
       <h2>The anatomy<br>of your air</h2>
       <p class="lead">Every time your system runs, it moves air through metal passages you never see. Dust, pet hair, pollen and mold spores settle there for years, then travel straight into your rooms.</p>
-      <ul class="chips"><li class="glass">Dust &amp; debris</li><li class="glass">Pet dander</li><li class="glass">Mold spores</li></ul>
+      <ul class="chips"><li class="glass">Dust &amp; debris</li><li class="glass">Pet dander</li><li class="glass">Mold spores</li><li class="glass">Pollen</li></ul>
     </div>
   </section>
 
@@ -57,49 +80,116 @@
   <section class="chapter col" id="services">
     <div class="head"><p class="eyebrow">What we clean</p><h2>A language of<br>fresh air</h2></div>
     <div class="grid">
-      <article class="glass card"><h3>Air duct cleaning</h3><p>Supply and return lines cleaned end to end.</p></article>
-      <article class="glass card"><h3>Furnace &amp; heat pump</h3><p>Blower, housing and heat exchanger cleaned and checked.</p></article>
-      <article class="glass card"><h3>AC coil cleaning</h3><p>Cleaner coils cool better and use less energy.</p></article>
-      <article class="glass card"><h3>Dryer vent cleaning</h3><p>Removes lint buildup that causes slow drying and fires.</p></article>
-      <article class="glass card"><h3>Mold &amp; sanitizing</h3><p>Targeted treatment for odors and microbial growth.</p></article>
-      <article class="glass card"><h3>Commercial HVAC</h3><p>Scheduled maintenance for offices, shops and clinics.</p></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-wind"/></svg></span><h3>Air duct cleaning</h3><p>Supply and return lines cleaned end to end, with before and after photos.</p><ul class="tags"><li>Most requested</li><li>2–4 hrs</li></ul></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-flame"/></svg></span><h3>Furnace &amp; heat pump</h3><p>Blower, housing and heat exchanger cleaned and checked for wear.</p><ul class="tags"><li>Before winter</li><li>1–2 hrs</li></ul></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-snow"/></svg></span><h3>AC coil cleaning</h3><p>Cleaner coils cool better, run quieter and use less energy.</p><ul class="tags"><li>Before summer</li><li>1–2 hrs</li></ul></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-dryer"/></svg></span><h3>Dryer vent cleaning</h3><p>Removes lint buildup that causes slow drying and fire risk.</p><ul class="tags"><li>Safety</li><li>45 min</li></ul></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-shield"/></svg></span><h3>Mold &amp; sanitizing</h3><p>Targeted treatment for musty odors and microbial growth.</p><ul class="tags"><li>Allergy relief</li><li>1 hr</li></ul></article>
+      <article class="glass card svc"><span class="icon"><svg class="ic"><use href="#i-building"/></svg></span><h3>Commercial HVAC</h3><p>Scheduled maintenance for offices, shops, clinics and restaurants.</p><ul class="tags"><li>After-hours</li><li>Contracts</li></ul></article>
     </div>
   </section>
 
   <section class="chapter col" id="pricing">
-    <div class="head"><p class="eyebrow">Pricing</p><h2>Clear prices,<br>no surprises</h2></div>
-    <div class="grid three">
-      <article class="glass card"><h3>Essential</h3><p class="price">From $149</p><ul><li>Up to 6 vents</li><li>Supply line cleaning</li><li>Filter check</li></ul><a href="#book" class="btn ghost">Choose Essential</a></article>
-      <article class="glass card feat"><h3>Complete</h3><p class="price">From $299</p><ul><li>Whole-home ducts</li><li>Furnace &amp; coil cleaning</li><li>Sanitizing treatment</li></ul><a href="#book" class="btn">Choose Complete</a></article>
-      <article class="glass card"><h3>Commercial</h3><p class="price">Custom quote</p><ul><li>On-site assessment</li><li>Scheduled service plans</li><li>Written report</li></ul><a href="#book" class="btn ghost">Request a quote</a></article>
+    <div class="head">
+      <p class="eyebrow">Packages</p><h2>Clear prices,<br>no surprises</h2>
+      <div class="seg" role="radiogroup" aria-label="Package type">
+        <label><input type="radio" name="ptype" value="home" checked><span>Home</span></label>
+        <label><input type="radio" name="ptype" value="biz"><span>Business</span></label>
+      </div>
     </div>
-    <p class="fine">Sample prices. Replace with your own rates.</p>
+    <div class="grid three" id="plans" aria-live="polite"></div>
+    <div class="addons glass"><b>Add-ons</b><span>Camera inspection <em>+$39</em></span><span>Dryer vent <em>+$49</em></span><span>Mold treatment <em>+$89</em></span><span>Yearly plan <em>save 15%</em></span></div>
+    <p class="fine">Sample prices. Final quote depends on the number of vents and system size.</p>
   </section>
 
   <section class="chapter col" id="reviews">
-    <div class="head"><p class="eyebrow">Customer reviews</p><h2>Air you can<br>feel the difference in</h2></div>
+    <div class="head"><p class="eyebrow">Customer reviews</p><h2>Air you can feel<br>the difference in</h2></div>
+    <div class="rate glass card">
+      <div class="score"><strong>4.9</strong><div><div class="stars" aria-label="4.9 out of 5"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div><small>Average of sample reviews</small></div></div>
+      <div class="bars"><div><span>5 stars</span><i style="--w:92%"></i></div><div><span>4 stars</span><i style="--w:7%"></i></div><div><span>3 stars</span><i style="--w:1%"></i></div></div>
+    </div>
     <div class="grid three">
-      <blockquote class="glass card">“My allergies eased within a week. The crew showed us the before and after photos.”<cite>Sample customer, homeowner</cite></blockquote>
-      <blockquote class="glass card">“On time, tidy, and honest about what we actually needed.”<cite>Sample customer, landlord</cite></blockquote>
-      <blockquote class="glass card">“They cleaned our office system over a weekend. No disruption at all.”<cite>Sample customer, office manager</cite></blockquote>
+      <figure class="glass card rev"><div class="who"><span class="av">SK</span><div><b>Sara K.</b><small>Homeowner · Clifton</small></div></div><div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div><blockquote>“My allergies eased within a week. The crew showed us before and after photos of every vent.”</blockquote><span class="chip2">Air duct cleaning</span></figure>
+      <figure class="glass card rev"><div class="who"><span class="av">AR</span><div><b>Ahmed R.</b><small>Landlord · DHA</small></div></div><div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div><blockquote>“On time, tidy, and honest about what we actually needed. No upselling.”</blockquote><span class="chip2">Complete package</span></figure>
+      <figure class="glass card rev"><div class="who"><span class="av">NM</span><div><b>Nadia M.</b><small>Office manager · Gulshan</small></div></div><div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div><blockquote>“They cleaned our whole office system over a weekend. Monday morning, no disruption at all.”</blockquote><span class="chip2">Commercial HVAC</span></figure>
+    </div>
+    <p class="fine">Sample reviews. Replace with your real customers.</p>
+  </section>
+
+  <section class="chapter col" id="faq">
+    <div class="head"><p class="eyebrow">Questions</p><h2>Before you book</h2></div>
+    <div class="faq">
+      <details class="glass"><summary>How often should ducts be cleaned?</summary><p>Most homes every 3 to 5 years. Cleaning sooner makes sense if you have pets, allergies, recent renovation, or visible dust at the vents.</p></details>
+      <details class="glass"><summary>How long does a visit take?</summary><p>A typical home takes 2 to 4 hours depending on the number of vents and the condition of the system.</p></details>
+      <details class="glass"><summary>Do I need to be home?</summary><p>An adult should be present at the start and end. We protect floors and furniture and leave the space tidy.</p></details>
+      <details class="glass"><summary>Is the sanitizing treatment safe?</summary><p>We use EPA-registered products applied only where needed. Tell us about pets, infants or sensitivities when you book.</p></details>
+      <details class="glass"><summary>What if I’m not happy with the result?</summary><p>Tell us within 7 days and we will return to re-clean the affected areas at no charge.</p></details>
     </div>
   </section>
 
-  <section class="chapter right" id="book">
-    <form class="panel glass card" id="form" novalidate>
-      <p class="eyebrow">Book a cleaning</p>
-      <h2>Fresh air by<br>this weekend</h2>
-      <label>Name<input name="name" required autocomplete="name"></label>
-      <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
-      <label>Service<select name="service"><option>Air duct cleaning</option><option>Furnace &amp; heat pump</option><option>AC coil cleaning</option><option>Dryer vent cleaning</option><option>Commercial HVAC</option></select></label>
-      <label>Notes<textarea name="notes" rows="3"></textarea></label>
-      <button class="btn" type="submit">Request my booking</button>
-      <p class="status" role="status" aria-live="polite"></p>
-    </form>
+  <section class="chapter col" id="book">
+    <div class="head"><p class="eyebrow">Book a cleaning</p><h2>Fresh air by<br>this weekend</h2></div>
+    <div class="bookwrap">
+      <aside class="glass card info">
+        <h3>Talk to us</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-phone"/></svg><span><b>Call</b>(555) 010-2030</span></li>
+          <li><svg class="ic"><use href="#i-chat"/></svg><span><b>WhatsApp</b>Reply within 15 minutes</span></li>
+          <li><svg class="ic"><use href="#i-mail"/></svg><span><b>Email</b>hello@airpure.example</span></li>
+          <li><svg class="ic"><use href="#i-clock"/></svg><span><b>Hours</b>Mon–Sat, 8am–8pm</span></li>
+          <li><svg class="ic"><use href="#i-pin"/></svg><span><b>Service area</b>City and surrounding suburbs</span></li>
+        </ul>
+        <h3>What happens next</h3>
+        <ol class="next"><li>We confirm your slot by call or WhatsApp.</li><li>A technician arrives with a fixed quote.</li><li>You approve, we clean, you check the result.</li></ol>
+      </aside>
+
+      <form class="glass card" id="form" novalidate>
+        <div class="fields">
+          <label>Full name<input name="name" required autocomplete="name"><span class="err"></span></label>
+          <label>Phone<input name="phone" type="tel" required autocomplete="tel" placeholder="03xx xxxxxxx"><span class="err"></span></label>
+          <label class="full">Email <small>(optional)</small><input name="email" type="email" autocomplete="email"><span class="err"></span></label>
+
+          <fieldset class="full"><legend>Property type</legend>
+            <div class="seg"><label><input type="radio" name="prop" value="Home" checked><span>Home</span></label><label><input type="radio" name="prop" value="Apartment"><span>Apartment</span></label><label><input type="radio" name="prop" value="Office"><span>Office</span></label><label><input type="radio" name="prop" value="Shop"><span>Shop</span></label></div>
+          </fieldset>
+
+          <label>Service<select name="service"><option>Air duct cleaning</option><option>Furnace &amp; heat pump</option><option>AC coil cleaning</option><option>Dryer vent cleaning</option><option>Mold &amp; sanitizing</option><option>Commercial HVAC</option></select></label>
+          <label>Package<select name="pkg"><option>Not sure, advise me</option><option>Essential</option><option>Complete</option><option>Premium</option><option>Small office</option><option>Retail / clinic</option><option>Enterprise</option></select></label>
+
+          <label>Preferred date<input name="date" type="date" required><span class="err"></span></label>
+          <div class="field"><span class="lbl">Number of vents</span>
+            <div class="step"><button type="button" data-d="-1" aria-label="Fewer vents">−</button><input name="vents" type="number" min="1" max="60" value="6" aria-label="Number of vents"><button type="button" data-d="1" aria-label="More vents">+</button></div>
+          </div>
+
+          <fieldset class="full"><legend>Time slot</legend>
+            <div class="seg"><label><input type="radio" name="slot" value="Morning (8–12)" checked><span>Morning</span></label><label><input type="radio" name="slot" value="Afternoon (12–4)"><span>Afternoon</span></label><label><input type="radio" name="slot" value="Evening (4–8)"><span>Evening</span></label></div>
+          </fieldset>
+
+          <label class="full">Address or area<input name="address" required autocomplete="street-address"><span class="err"></span></label>
+
+          <fieldset class="full"><legend>Contact me by</legend>
+            <div class="seg"><label><input type="radio" name="via" value="Call" checked><span>Call</span></label><label><input type="radio" name="via" value="WhatsApp"><span>WhatsApp</span></label><label><input type="radio" name="via" value="Email"><span>Email</span></label></div>
+          </fieldset>
+
+          <label class="full">Notes <small>(pets, allergies, access)</small><textarea name="notes" rows="3"></textarea></label>
+          <label class="check full"><input type="checkbox" name="ok" required><span>I agree to be contacted about this booking.</span><span class="err"></span></label>
+        </div>
+        <button class="btn" type="submit">Request my booking</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="glass card done" id="done" hidden></div>
   </section>
 </main>
 
-<footer class="foot glass"><span>© <span id="yr"></span> AirPure HVAC. Licensed &amp; insured.</span><span>Call (555) 010-2030 · hello@airpure.example</span></footer>
+<footer class="foot glass">
+  <div><b class="brand2">airpure</b><p>Professional duct and HVAC cleaning for homes and businesses.</p></div>
+  <div><b>Services</b><a href="#services">Duct cleaning</a><a href="#services">Furnace &amp; coils</a><a href="#services">Dryer vents</a></div>
+  <div><b>Company</b><a href="#process">Our process</a><a href="#pricing">Packages</a><a href="#faq">FAQ</a></div>
+  <div><b>Contact</b><span>(555) 010-2030</span><span>hello@airpure.example</span><span>© <span id="yr"></span> AirPure HVAC</span></div>
+</footer>
+
+<div class="fab"><a href="tel:+15550102030" class="glass" aria-label="Call us"><svg class="ic"><use href="#i-phone"/></svg></a><a href="https://wa.me/15550102030" target="_blank" rel="noopener" class="glass" aria-label="WhatsApp us"><svg class="ic"><use href="#i-chat"/></svg></a></div>
 <script src="script.js"></script>
 </body>
 </html>
